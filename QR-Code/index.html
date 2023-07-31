@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <title>QR-Code Generator</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <span>Enter a text</span>
+      <input type="text" id="text-field" placeholder="Text" />
+      <div id="imgBox">
+        <img src="" id="image" />
+      </div>
+      <button class="btn" onclick="generateQR()">Generate QR-Code</button>
+      <div id="dBox">
+        <button class="d-btn" id="dBtn" onclick="downloadQR()">
+          Download <i class="fa-solid fa-download"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
